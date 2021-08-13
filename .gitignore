@@ -2,7 +2,7 @@
 
 spring-hibernate.iml
 
-*.class
+target/*
 
 *.war
 *.jar
