@@ -20,7 +20,7 @@ public class User {
     private String email;
 
     @OneToOne
-    @JoinColumn
+    @JoinColumn(name = "car_id", referencedColumnName = "id")
     private Car car;
 
     public User() {
@@ -32,7 +32,7 @@ public class User {
         this.email = email;
     }
 
-    public User(Car car, Long id, String firstName, String lastName, String email) {
+    public User(Car car,String firstName, String lastName, String email) {
         this.car = car;
         this.id = id;
         this.firstName = firstName;

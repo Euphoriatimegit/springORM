@@ -14,13 +14,12 @@ public class Car {
     private String model;
 
     @Column(name = "series")
-    private int series;
+    private Integer series;
 
     public Car() {
     }
 
-    public Car(Long id, String model, int series) {
-        this.id = id;
+    public Car(String model, Integer series) {
         this.model = model;
         this.series = series;
     }
