@@ -34,7 +34,7 @@ public class MainApp {
             System.out.println();
         }
 
-        List<String> resultUsers = userService.userCar("opel",2);
+        List<String> resultUsers = userService.userCar("opel",1);
         for(String name : resultUsers){
             System.out.println(name);
         }
